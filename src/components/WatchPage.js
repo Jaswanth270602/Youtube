@@ -20,7 +20,7 @@ const WatchPage = () => {
          dispatch(closeMenu());
          getDetails();
          getSuggestedVideos();
-    },[])
+    },[searchParams.get("v")])
     
     const handleDes=()=>{
         setIsDesOpen(!isDesOpen);
